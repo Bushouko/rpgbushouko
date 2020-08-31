@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+    <!--MODAL BASE PARA INPUTS-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal_base_input">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-titulo_input"></h5>
+                </div>
+                <div class="modal-body" id="modal-body_input">
+                </div>
+                <div class="modal-footer" id="modal-footer_input">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIM MODAL-->
+    <!--MODAL BASE PARA TEXTOS-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal_base_texto">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title_texto"></h5>
+                    <button type="button" class="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body_texto">
+                </div>
+                <div class="modal-footer" id="modal-footer_texto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIM MODAL-->
+
+
+    <header>
+        <img src="imgs/kisspng-dungeons-dragons-unearthed-arcana-role-playing-g-typing-5ac4ab9a4f2759.5726162215228384263242.png"
+            class="imagens" id="logo_header">
+        <nav class="navbar navbar-light navbar-expand-sm">
+            <div class="container" id="container_nav-bar">
+                <button id="nav-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarDiv" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarDiv">
+                    <div class="col-6">
+                        <input type="button" value="Cadastrar-se &#9876" class="botao_header" id="botao_cadastrar"
+                            onclick="cadastrar()">
+                        <input type="button" value="Entrar" class="botao_header" id="botao_entrar" onclick="entrar()">
+                    </div>
+                    <div class="col-6">
+                        <input type="button" value="Sair" class="botao_header" id="botao_sair" onclick="sair()">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" id="container_conteudos">
+        <div class="row">
+            <div class="col-lg-6 col-md-6" id="section_ferreiro">
+                <div class="row">
+                    <div id="header_ferreiro">
+                        <h1 class="titulos">FERREIRO</h1>
+                        <img src="imgs/kisspng-anvil-blacksmith-forge-hephaestus-blacksmith-5ae267d3b1b0f4.2906251515247871557278.png"
+                            alt="" class="icones" id="anvil">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="imgs/Blacksmith.png" class="imagens" id="imagemFerreiro">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <img src="imgs/icons8-search-55.png" id="searchIcon">
+                            <input type="text" name="search" placeholder="Procurar..." id="motorDeBusca"
+                                onclick="hide_armas()">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <select name="armas" id="armas"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <input type="button" value="Comprar" id="botaoComprar" class="botao" onclick="compra()">
+                    </div>
+                    <audio id="audio_comprar" src="imgs/apple-pay-success-sound-effect.mp3"></audio>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <input type="button" value="Mostrar todos as armas" class="botao" id="mostrar_itens"
+                            onclick="mostrar_armas()">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div id="inventario_header">
+                            <h1 class="titulos">INVENTÁRIO</h1>
+                            <img src="imgs/icone_bau.png" class="icones">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6" id="section_inventario">
+                        <div id="item_inventario_coluna_1"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div id="item_inventario_coluna_2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+
+</html>

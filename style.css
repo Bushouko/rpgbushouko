@@ -1,0 +1,281 @@
+/*FERREIRO*/
+#header_ferreiro {
+    margin-left: 30px;
+    margin-right: 0px;
+    display: block;
+    margin-top: 20px;
+}
+#header_ferreiro img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+}
+#header_ferreiro h1 {
+    display: inline;
+    margin-left: auto;
+    margin-right: 10px;
+}
+/*FIM FERREIRO*/
+/*INVENTARIO*/
+#inventario_header {
+    margin-left: 10px;
+    margin-right: 0px;
+    display: block;
+    margin-top: 20px;
+}
+#inventario_header img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70px;
+}
+#inventario_header h1 {
+    display: inline;
+    margin-left: auto;
+    margin-right: 10px;
+}
+/*FIM INVENTARIO*/
+/*HEADER*/
+#botao_cadastrar {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.4s ease-out;
+}
+html, body {
+    overflow-x: hidden;
+    padding-right: 0px !important
+}
+#botao_entrar {  
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.4s ease-out;
+}
+#botao_sair {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}#logo_header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}.navbar {
+    background-color: #a21a1e;
+}#container_nav-bar {
+    background-color: #a21a1e;
+}header {
+    background-color: white;
+}
+body {
+    background-color: #1f1f1f;
+}
+.container {
+    background-color: rgb(255, 255, 255);  
+}
+#item_inventario_coluna_2 {
+    margin-right: 20px;
+}
+#item_inventario_coluna_1 {
+    margin-right: 20px;
+}
+/*FIM HEADER*/
+/*MODAL CONTENTS*/
+.modal-content {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #401515;
+}
+.modal-open {
+    overflow-y: auto;
+}
+#titulo_modal {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+#imagem_modal {
+    max-width: 230px;
+    margin-left: 110px;
+}.modal_input {
+    background-color: whi;
+    border-color: #ec2127;
+    border-style: solid;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 40%;
+    transition: 0.4s ease-out;
+}.modal_input:focus {
+    width: 80%;
+}
+.botao_modal {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px rgb(73, 73, 73);
+    transition: 0.3s ease-out;
+    border-color: #ec2127;
+}.botao_modal:hover {
+    padding: 13px;
+    opacity: 60%;
+}
+.icones {
+    max-width: 80px;
+}
+.item_inventario {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    animation: slidein 0.2s 1;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    transition: 0.2s ease-out;
+    display: block;
+}
+.item_inventario:hover {
+    border-width: 8px;
+    border-color: #ec2127;
+}#text_inventario_vazio {
+    font-family: 'Times New Roman', Times, serif;
+    border-style: solid;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+ul.ui-autocomplete {
+    font-family: 'Times New Roman', Times, serif;
+    border-style: dashed;
+}ul.ui-autocomplete li.ui-menu-item {
+    background-color: #822b2b;
+}ul.ui-autocomplete li.ui-menu-item a {
+    color: white;
+}
+.imagens {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 4px 5px rgba(0,0,0,0.44);
+}#textFerreiro{
+    margin-left: 0px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}select {
+    background-color: rgb(130, 43, 43);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    border-radius: 3px;
+    padding: 16px 20px;
+    width: 100%;
+} 
+
+#label_nome {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px; 
+}#label_password {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px; 
+}.botao_header {
+    display: inline;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    text-shadow: 1px 1px 10px #000000;
+    transition: 0.3s ease-out;
+}.botao_header:hover {
+    padding: 10px;
+    background-color: white;
+    color: #ec2127;
+}.titulos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}.botao {
+    background-color: #822b2b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px rgb(73, 73, 73);
+    transition: 0.3s ease-out;
+}.botao:hover {
+    padding: 13px;
+    background-color: #894e4e;
+}#botaoComprar {
+    margin-left: 58px;
+}
+#searchIcon {
+    margin-left: 20px;
+    max-width: 100%;
+}#motorDeBusca {
+   display: block;
+   margin-left: 0px;
+   margin-right: auto;
+   background-color: rgb(130, 43, 43);
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 900;
+   border-radius: 3px; 
+   padding: 7px 20px;    
+   transition-duration: 0.7s; 
+   width: 34%;     
+}#motorDeBusca:focus {
+    width: 70%;
+}
+@media screen and (max-width: 768px) {
+    #searchIcon {max-width: 0%; }
+    #motorDeBusca { width: 90%; margin-left: 0px; margin-right: auto;}
+    #motorDeBusca:focus { width: 90%;}
+    select {width: 100%; margin-left: 4px;}
+    #mostrar_itens {margin-left: 4px;}
+    #botaoComprar {margin-left: 4px;}
+    #logo {margin-left: 20px;}
+    .item_inventario{max-width: 95%;}
+    #imagem_modal {margin-left: 75px;}
+    .container {padding: 0;}
+ }
+ 
+ @media screen and (max-width: 992px) and (min-width: 768px) {
+    #mostrar_itens {margin-left: 58px;}
+    select {width: 80%; margin-left: 60px;} 
+     
+ }
+ @media screen and (max-width: 540px) {
+    #botao_cadastrar {display: inline-block; width: 100%;}
+    #botao_entrar {display: inline-block; margin-top: 10px; width: 100%;}
+    #container_conteudos {padding:0; margin:0;} 
+    body {padding: 0;}
+ }
+
+
+ @keyframes slidein {
+    0%{margin-left: 100%; width: 300%; background-color: black;}
+    100%{margin-left: 25px; width: 100%;}
+}
